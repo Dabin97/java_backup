@@ -1,0 +1,2 @@
+java.lang.Exception: Exception 발생
+	at file.ExceptionWriter.main(ExceptionWriter.java:11)

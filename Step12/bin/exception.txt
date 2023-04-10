@@ -1,0 +1,11 @@
+exception : 프로그램이 실행 중에 발생하는 에러
+			실행 중에 에러 발생되면 기본적으로는 프로그램이 강제 종료가 됨
+			프로그램이 강제 종료가 되지 않게끔, 중간에 발생하는 에러를 잡는 행위를 Exception 처리
+			런타임에러 = exception
+			
+			
+try : 작업영역, 대신에 이 영역에서는 Exception이 발생할 수 있다. try{ }로 해야하는 부분 처음부터 끝까지 감싼다. 
+catch : try 영역에서 Exception이 발생했을때 Exception을 처리하는 영역
+finally : Exception이 발생하든 안하든 반드시 실행하는 영역(주로 파일 입출력,네트워크로 데이터 주고받을때 쓴다. 마지막 뒷처리용)
+throw : 원하는 부분에서 Exception을 강제로 발생 (강제종료용 return의 역할)
+throws : 발생한 Exception을 외부로 던지는 행위(메서드를 호출한 대상에게 Exception을 전달)(오류를 만든 대상에게 넘기기)
